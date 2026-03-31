@@ -22,7 +22,7 @@ public class Calculator
 
     public int Subtract(int a, int b)
     {
-        return a - b   // BUG: Missing semicolon → CS1002 error
+        return a - b;   // Fixed: Added missing semicolon
     }
 
     public int Multiply(int a, int b)
@@ -30,8 +30,8 @@ public class Calculator
         return a * b;
     }
 
-    // BUG: Return type is 'string' but should be 'double' → CS0029 error
-    public string Divide(int a, int b)
+    // Fixed: Return type changed from 'string' to 'double'
+    public double Divide(int a, int b)
     {
         if (b == 0)
             throw new DivideByZeroException("Cannot divide by zero");
