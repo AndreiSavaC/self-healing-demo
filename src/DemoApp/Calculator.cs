@@ -1,7 +1,7 @@
 // ┌─────────────────────────────────────────────────────────────────┐
 // │  DEMO: This file contains INTENTIONAL BUGS for the             │
 // │  self-healing agent to detect and fix.                         │
-// │                                                                │
+// │                                                                 │
 // │  Bug 1: Missing semicolon on line 26 → Build failure           │
 // │  Bug 2: Wrong return type on Divide method → Build failure     │
 // └─────────────────────────────────────────────────────────────────┘
