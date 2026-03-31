@@ -32,18 +32,18 @@ public class Calculator
 
     /// <summary>
     /// Calculate factorial of n. 
-    /// BUG: Uses int instead of long — overflows silently for n > 12
-    /// because int.MaxValue is only 2,147,483,647 but 13! = 6,227,020,800
+    /// FIXED: Changed return type from int to long to prevent overflow for n >= 13
+    /// int.MaxValue is 2,147,483,647, but 13! = 6,227,020,800
     /// </summary>
-    public int Factorial(int n)
+    public long Factorial(int n)
     {
         if (n < 0) throw new ArgumentException("Factorial not defined for negative numbers");
         if (n <= 1) return 1;
 
-        int result = 1;
+        long result = 1;
         for (int i = 2; i <= n; i++)
         {
-            // BUG: unchecked int overflow for n >= 13
+            // Fixed: Use long to prevent overflow for n >= 13
             result *= i;
         }
         return result;

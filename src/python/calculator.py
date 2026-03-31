@@ -57,11 +57,10 @@ class Calculator:
             raise TypeError("Factorial requires an integer")
         if n < 0:
             raise ValueError("Factorial not defined for negative numbers")
-        # BUG: off-by-one, starts product at 0 when n=0 this works (returns 1),
-        # but for n>=1 the range is wrong: range(1, n) misses multiplying by n itself
-        # e.g. factorial(5) returns 1*2*3*4 = 24 instead of 120
+        # Fixed: range(1, n+1) to include n in multiplication
+        # e.g. factorial(5) now computes 1*2*3*4*5 = 120
         result = 1
-        for i in range(1, n):
+        for i in range(1, n + 1):
             result *= i
         return self._record(f"{n}!", result)
 

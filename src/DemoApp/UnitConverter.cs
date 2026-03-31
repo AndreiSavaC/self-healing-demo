@@ -2,17 +2,16 @@ namespace DemoApp;
 
 /// <summary>
 /// Unit converter matching the Python converter module.
-/// BUG: Fahrenheit-to-Celsius formula has a precedence error.
-/// It computes (f - 32 * 5) / 9 instead of (f - 32) * 5 / 9
+/// FIXED: Corrected Fahrenheit-to-Celsius formula with proper parentheses.
+/// Was: f - 32 * 5.0 / 9.0 → Evaluates as f - 17.78 (incorrect)
+/// Now: (f - 32) * 5.0 / 9.0 → Correctly computes temperature conversion
 /// </summary>
 public class UnitConverter
 {
     public static double CelsiusToFahrenheit(double c) => (c * 9.0 / 5.0) + 32.0;
 
-    // BUG: Missing parentheses around (f - 32) — operator precedence
-    // Evaluates as: f - (32 * 5 / 9) = f - 17.78  (WRONG)
-    // Should be:    (f - 32) * 5 / 9              (CORRECT)
-    public static double FahrenheitToCelsius(double f) => f - 32 * 5.0 / 9.0;
+    // FIXED: Added parentheses around (f - 32) to ensure correct operator precedence
+    public static double FahrenheitToCelsius(double f) => (f - 32) * 5.0 / 9.0;
 
     public static double CelsiusToKelvin(double c)
     {
