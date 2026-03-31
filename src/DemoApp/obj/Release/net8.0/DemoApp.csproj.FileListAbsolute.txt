@@ -1,0 +1,15 @@
+/home/z0057pnt/work/demo-repo/src/DemoApp/bin/Release/net8.0/DemoApp
+/home/z0057pnt/work/demo-repo/src/DemoApp/bin/Release/net8.0/DemoApp.deps.json
+/home/z0057pnt/work/demo-repo/src/DemoApp/bin/Release/net8.0/DemoApp.runtimeconfig.json
+/home/z0057pnt/work/demo-repo/src/DemoApp/bin/Release/net8.0/DemoApp.dll
+/home/z0057pnt/work/demo-repo/src/DemoApp/bin/Release/net8.0/DemoApp.pdb
+/home/z0057pnt/work/demo-repo/src/DemoApp/obj/Release/net8.0/DemoApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/z0057pnt/work/demo-repo/src/DemoApp/obj/Release/net8.0/DemoApp.AssemblyInfoInputs.cache
+/home/z0057pnt/work/demo-repo/src/DemoApp/obj/Release/net8.0/DemoApp.AssemblyInfo.cs
+/home/z0057pnt/work/demo-repo/src/DemoApp/obj/Release/net8.0/DemoApp.csproj.CoreCompileInputs.cache
+/home/z0057pnt/work/demo-repo/src/DemoApp/obj/Release/net8.0/DemoApp.sourcelink.json
+/home/z0057pnt/work/demo-repo/src/DemoApp/obj/Release/net8.0/DemoApp.dll
+/home/z0057pnt/work/demo-repo/src/DemoApp/obj/Release/net8.0/refint/DemoApp.dll
+/home/z0057pnt/work/demo-repo/src/DemoApp/obj/Release/net8.0/DemoApp.pdb
+/home/z0057pnt/work/demo-repo/src/DemoApp/obj/Release/net8.0/DemoApp.genruntimeconfig.cache
+/home/z0057pnt/work/demo-repo/src/DemoApp/obj/Release/net8.0/ref/DemoApp.dll
